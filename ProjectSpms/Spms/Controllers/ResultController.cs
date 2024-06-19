@@ -44,7 +44,7 @@ public class ResultController : ControllerBase{
         var quiz = (from q in site.Quizes
                     select q).ToList();
         var student = await site.StudentResults.Select(s=>s.Studnet_id).ToListAsync();
-        if(quiz == null){
+        if(quiz.count() == 0){
             return NotFound("You are not created any quiz");
         }
         int sum = 0;
