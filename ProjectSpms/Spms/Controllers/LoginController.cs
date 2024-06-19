@@ -17,7 +17,7 @@ namespace spms.Controllers
     {
         private readonly SiteDbContext _site;
 
-        public LoginController(SiteDbContext site)//what is purpose of this constructor
+        public LoginController(SiteDbContext site)
         {
             _site = site;
         }
