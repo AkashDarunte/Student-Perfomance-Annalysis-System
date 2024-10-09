@@ -16,8 +16,5 @@ public class Subject
     [JsonIgnore]
     public Course Course { get; set; }
 
-    // Subject(int SubjectId,string SubjectName){
-    //     this.SubjectId = SubjectId;
-    //     this.SubjectName = SubjectName;
-    // }
+    
 }
